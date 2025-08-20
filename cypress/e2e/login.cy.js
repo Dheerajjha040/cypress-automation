@@ -7,7 +7,7 @@ describe('parabanktestuite', () => {
 
   it('Verify the login page opened', () => {
 
-    cy.get('.logo').should('not.visible')
+    cy.get('.logo').should('be.visible')
     cy.get('p').contains('Experience the difference').should('be.visible')
   
   })
