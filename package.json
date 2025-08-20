@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test-fetchalllinks": "npx cypress run --spec cypress/e2e/getallLinks.cy.js --parallel",
-    "test-login": "npx cypress run --spec cypress/e2e/login.cy.js --parallel",
-    "test-Reigstration": "npx cypress run --spec cypress/e2e/registration.cy.js --parallel",
-    "test-readExcel": "npx cypress run --spec cypress/e2e/readExceltest.cy.js --parallel"
+    "test-fetchalllinks": "npx cypress run --spec cypress/e2e/getallLinks.cy.js",
+    "test-login": "npx cypress run --spec cypress/e2e/login.cy.js",
+    "test-Reigstration": "npx cypress run --spec cypress/e2e/registration.cy.js",
+    "test-readExcel": "npx cypress run --spec cypress/e2e/readExceltest.cy.js"
     
   },
   "keywords": [],
