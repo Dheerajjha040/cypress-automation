@@ -4,8 +4,7 @@ jobs:
   cypress-run:
     runs-on: ubuntu-22.04
     steps:
-      -name: checkout
-       uses: actions/checkout@v3
-
-      -name: Cypress-run
-       uses: cypress-io/github-actions@v5
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Cypress-run
+        uses: cypress-io/github-actions@v5
