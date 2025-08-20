@@ -26,7 +26,7 @@ describe('RegistrationSuite', () => {
         rp.enter_repeatpassword(user.password)
         rp.click_register_button() 
 
-        cy.writeFile('cypress/fixtures/example.json',{
+        cy.writeFile('cypress/fixtures/storecredentials.json',{
             username: user.username,
             password: user.password
         })
