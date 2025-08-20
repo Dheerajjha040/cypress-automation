@@ -1,10 +1,13 @@
 name: End-to-End Test
 on: push
 jobs:
-  cypress-run:
+  login-run:
     runs-on: ubuntu-22.04
     steps:
       - name: checkout
         uses: actions/checkout@v3
       - name: Cypress-run
         uses: cypress-io/github-action@v6
+        with:
+          command: npm run test-login
+          browser: firefox
