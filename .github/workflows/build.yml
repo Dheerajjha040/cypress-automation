@@ -1,6 +1,16 @@
 name: End-to-End Test
 on: push
 jobs:
+  register-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Cypress-run
+        uses: cypress-io/github-action@v6
+        with:
+          command: npm run test-Reigstration
+
   login-run:
     runs-on: ubuntu-22.04
     steps:
@@ -10,4 +20,24 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run test-login
-          browser: firefox
+
+  excel-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Cypress-run
+        uses: cypress-io/github-action@v6
+        with:
+          command: npm run test-readExcel
+          
+  links-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Cypress-run
+        uses: cypress-io/github-action@v6
+        with:
+          command: npm run test-fetchalllinks
+          
